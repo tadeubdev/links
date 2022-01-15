@@ -1,3 +1,7 @@
+:root {
+  --background: #29e5df;
+}
+
 body {
   font-family: monospace;
   color: #FFF6FF;
@@ -12,8 +16,8 @@ body {
 .container {
   max-width: 450px;
   padding: 0.625rem 0.938rem;
-  box-shadow: 10px 10px 0em #5F4B64;
-  border: 1px solid #5F4B64;
+  box-shadow: 10px 10px 0em var(--background);
+  border: 1px solid var(--background);
 }
 
 .header {
@@ -26,6 +30,7 @@ body {
   width: 100px;
   height: 100px;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .header__title, .header__subtitle {
@@ -54,12 +59,12 @@ body {
 
 .links a:hover {
   display: block;
-  background-color: #5F4B64;
+  background-color: var(--background);
   animation: mouseHover 1.5s;
 }
 
 ion-icon:hover {
-  color: #5F4B64;
+  color: var(--background);
   animation: mouseHover 1.5s;
 }
 
